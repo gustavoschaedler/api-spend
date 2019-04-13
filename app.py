@@ -6,8 +6,7 @@ logger.basicConfig(level="DEBUG")
 myApp = Flask(__name__)
 
 if __name__ == "__main__":
-    from api import myApp
-
     logger.debug("Starting the application")
+    from api import myApp
 
     myApp.run(debug=True)
