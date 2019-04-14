@@ -1,6 +1,7 @@
 # My files to ignore
 _aux
 .virtualenv
+virtualenv
 .vscode
 .DS_Store
 
