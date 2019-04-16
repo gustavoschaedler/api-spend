@@ -75,7 +75,7 @@ class SpendByWhopaid(Resource):
 
     def __init__(self):
         self.__dbConn = DatabaseConn()
-        self.__spend_list = self.__dbConn.getAll()
+        self.__spend_list = self.__dbConn.read()
         self.__attribute = "whopaid"
 
     def get(self, spend_whopaid):
